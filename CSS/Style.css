@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+.font1 {
+  font-size: 14px;
+}
+
+.font2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.border {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  &:hover {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+  }
+}
+
+/* NavBar */
+
+.navbar {
+  display: flex;
+  background-color: #0f1111;
+  height: 60px;
+  justify-content: space-evenly;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.nav-logo img {
+  height: 50px;
+}
+
+/* NAVBAR location */
+
+.nav-locate {
+  color: white;
+  padding: 5px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-map {
+  margin: 5px;
+}
+
+.nav-deliver {
+  padding-left: 5px;
+  padding-right: 2px;
+  text-align: center;
+}
+
+.nav-delicountry {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-country {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/* NAVBAR search */
+
+.nav-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1250px;
+  padding: 15px;
+}
+
+.nav-search input {
+  height: 40px;
+  padding: 0px 4px;
+  width: 100%;
+  border: none;
+}
+
+.nav-search select {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+  padding: 12px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.nav-search-icon {
+  background-color: orange;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 12px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+/* Sign in */
+
+.nav-sign {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 5px;
+}
+
+/* Nav order and returs */
+
+.nav-reorder {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 5px;
+}
+
+/* Navbar cart section */
+
+.nav-cart-order {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.cart {
+  font-size: 25px;
+  padding: 10px;
+}
+
+.nav-cart {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Navbar 2nd */
+.navbar2 {
+  background-color: #232f3e;
+  height: 40px;
+  color: white;
+  display: flex;
+  padding: 0px 10px;
+  justify-content: start;
+  align-items: center;
+}
+
+.nav2-all {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.nav2-all span {
+  padding: 3px;
+  font-weight: bold;
+}
+
+.nav2-all i {
+  padding: 5px;
+}
+
+/* Navbar 2 Options */
+
+.nav2-options {
+  width: 100%;
+}
+
+.navbar2 ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar2 ul li {
+  /* margin: 0px 6px; */
+  padding: 10px 12px;
+  text-decoration: none;
+  list-style: none;
+  height: 100%;
+}
+
+.navbar2 ul li:hover {
+  cursor: pointer;
+}
+
+/* Main section of the webstie */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main img {
+  width: 100vw;
+  background-size: cover;
+}
+
+/* Product Section */
+
+.product-section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  top: 500px;
+  padding: 20px 150px;
+}
+
+.product-section::after {
+  background-color: #e3e6e6;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.box {
+  width: 350px;
+  height: 420px;
+  margin: 10px 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.box h2 {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+/* Product Sections items */
+
+.box-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-image: url('/Images/Furniture.jpg'); */
+}
+
+.box-img img {
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.pics {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.pics img {
+  width: 150px;
+  height: 115px;
+  margin: 10px;
+}
+
+/* Footer Section */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: #232f3e;
+  position: absolute;
+  top: 1420px;
+  height: 500px;
+  width: 100%;
+  padding: 0px 300px;
+}
+
+.footer-sections {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: bold;
+}
+
+.footer-sections ul {
+  margin: 10px 0px;
+  font-weight: normal;
+}
+
+.footer-sections ul li {
+  list-style: none;
+  font-size: 14px;
+  color: #dddddd;
+  margin: 10px;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.spacer{
+    height: 500px;
+    width: 100px;
+}
